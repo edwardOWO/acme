@@ -1,0 +1,89 @@
+[Tue Mar 14 03:15:44 UTC 2023] Running cmd: setdefaultca
+[Tue Mar 14 03:15:44 UTC 2023] Changed default CA to: https://acme-v02.api.letsencrypt.org/directory
+[Tue Mar 14 03:15:45 UTC 2023] Running cmd: issue
+[Tue Mar 14 03:15:45 UTC 2023] _main_domain='test.ltpix.link'
+[Tue Mar 14 03:15:45 UTC 2023] _alt_domains='no'
+[Tue Mar 14 03:15:45 UTC 2023] Using config home:/home/vscode/.acme.sh
+[Tue Mar 14 03:15:45 UTC 2023] ACME_DIRECTORY='https://acme-v02.api.letsencrypt.org/directory'
+[Tue Mar 14 03:15:45 UTC 2023] DOMAIN_PATH='/home/vscode/.acme.sh/test.ltpix.link_ecc'
+[Tue Mar 14 03:15:45 UTC 2023] Le_NextRenewTime
+[Tue Mar 14 03:15:45 UTC 2023] Using ACME_DIRECTORY: https://acme-v02.api.letsencrypt.org/directory
+[Tue Mar 14 03:15:45 UTC 2023] _init api for server: https://acme-v02.api.letsencrypt.org/directory
+[Tue Mar 14 03:15:45 UTC 2023] GET
+[Tue Mar 14 03:15:45 UTC 2023] url='https://acme-v02.api.letsencrypt.org/directory'
+[Tue Mar 14 03:15:45 UTC 2023] timeout=
+[Tue Mar 14 03:15:45 UTC 2023] _CURL='curl --silent --dump-header /home/vscode/.acme.sh/http.header  -L  -g '
+[Tue Mar 14 03:15:45 UTC 2023] ret='0'
+[Tue Mar 14 03:15:45 UTC 2023] ACME_KEY_CHANGE='https://acme-v02.api.letsencrypt.org/acme/key-change'
+[Tue Mar 14 03:15:45 UTC 2023] ACME_NEW_AUTHZ
+[Tue Mar 14 03:15:45 UTC 2023] ACME_NEW_ORDER='https://acme-v02.api.letsencrypt.org/acme/new-order'
+[Tue Mar 14 03:15:45 UTC 2023] ACME_NEW_ACCOUNT='https://acme-v02.api.letsencrypt.org/acme/new-acct'
+[Tue Mar 14 03:15:45 UTC 2023] ACME_REVOKE_CERT='https://acme-v02.api.letsencrypt.org/acme/revoke-cert'
+[Tue Mar 14 03:15:45 UTC 2023] ACME_AGREEMENT='https://letsencrypt.org/documents/LE-SA-v1.3-September-21-2022.pdf'
+[Tue Mar 14 03:15:45 UTC 2023] ACME_NEW_NONCE='https://acme-v02.api.letsencrypt.org/acme/new-nonce'
+[Tue Mar 14 03:15:45 UTC 2023] Using CA: https://acme-v02.api.letsencrypt.org/directory
+[Tue Mar 14 03:15:45 UTC 2023] _on_before_issue
+[Tue Mar 14 03:15:45 UTC 2023] _chk_main_domain='test.ltpix.link'
+[Tue Mar 14 03:15:45 UTC 2023] _chk_alt_domains
+[Tue Mar 14 03:15:45 UTC 2023] Le_LocalAddress
+[Tue Mar 14 03:15:45 UTC 2023] d='test.ltpix.link'
+[Tue Mar 14 03:15:45 UTC 2023] Check for domain='test.ltpix.link'
+[Tue Mar 14 03:15:45 UTC 2023] _currentRoot='dns'
+[Tue Mar 14 03:15:45 UTC 2023] d
+[Tue Mar 14 03:15:45 UTC 2023] _saved_account_key_hash is not changed, skip register account.
+[Tue Mar 14 03:15:45 UTC 2023] Read key length:ec-256
+[Tue Mar 14 03:15:45 UTC 2023] _createcsr
+[Tue Mar 14 03:15:45 UTC 2023] Single domain='test.ltpix.link'
+[Tue Mar 14 03:15:45 UTC 2023] Getting domain auth token for each domain
+[Tue Mar 14 03:15:45 UTC 2023] d
+[Tue Mar 14 03:15:45 UTC 2023] url='https://acme-v02.api.letsencrypt.org/acme/new-order'
+[Tue Mar 14 03:15:45 UTC 2023] payload='{"identifiers": [{"type":"dns","value":"test.ltpix.link"}]}'
+[Tue Mar 14 03:15:45 UTC 2023] EC key
+[Tue Mar 14 03:15:46 UTC 2023] HEAD
+[Tue Mar 14 03:15:46 UTC 2023] _post_url='https://acme-v02.api.letsencrypt.org/acme/new-nonce'
+[Tue Mar 14 03:15:46 UTC 2023] _CURL='curl --silent --dump-header /home/vscode/.acme.sh/http.header  -L  -g  -I  '
+[Tue Mar 14 03:15:46 UTC 2023] _ret='0'
+[Tue Mar 14 03:15:46 UTC 2023] POST
+[Tue Mar 14 03:15:46 UTC 2023] _post_url='https://acme-v02.api.letsencrypt.org/acme/new-order'
+[Tue Mar 14 03:15:46 UTC 2023] _CURL='curl --silent --dump-header /home/vscode/.acme.sh/http.header  -L  -g '
+[Tue Mar 14 03:15:47 UTC 2023] _ret='0'
+[Tue Mar 14 03:15:47 UTC 2023] code='201'
+[Tue Mar 14 03:15:47 UTC 2023] Le_LinkOrder='https://acme-v02.api.letsencrypt.org/acme/order/1008344927/169956162577'
+[Tue Mar 14 03:15:47 UTC 2023] Le_OrderFinalize='https://acme-v02.api.letsencrypt.org/acme/finalize/1008344927/169956162577'
+[Tue Mar 14 03:15:47 UTC 2023] url='https://acme-v02.api.letsencrypt.org/acme/authz-v3/210676878367'
+[Tue Mar 14 03:15:47 UTC 2023] payload
+[Tue Mar 14 03:15:47 UTC 2023] POST
+[Tue Mar 14 03:15:47 UTC 2023] _post_url='https://acme-v02.api.letsencrypt.org/acme/authz-v3/210676878367'
+[Tue Mar 14 03:15:47 UTC 2023] _CURL='curl --silent --dump-header /home/vscode/.acme.sh/http.header  -L  -g '
+[Tue Mar 14 03:15:48 UTC 2023] _ret='0'
+[Tue Mar 14 03:15:48 UTC 2023] code='200'
+[Tue Mar 14 03:15:48 UTC 2023] d='test.ltpix.link'
+[Tue Mar 14 03:15:48 UTC 2023] Getting webroot for domain='test.ltpix.link'
+[Tue Mar 14 03:15:48 UTC 2023] _w='dns'
+[Tue Mar 14 03:15:48 UTC 2023] _currentRoot='dns'
+[Tue Mar 14 03:15:48 UTC 2023] entry='"type":"dns-01","status":"pending","url":"https://acme-v02.api.letsencrypt.org/acme/chall-v3/210676878367/p9CRJw","token":"BTspDMvDtMboObRoekxooFB4OwMrf1AbwmIyfQjTsS8"'
+[Tue Mar 14 03:15:48 UTC 2023] token='BTspDMvDtMboObRoekxooFB4OwMrf1AbwmIyfQjTsS8'
+[Tue Mar 14 03:15:48 UTC 2023] uri='https://acme-v02.api.letsencrypt.org/acme/chall-v3/210676878367/p9CRJw'
+[Tue Mar 14 03:15:48 UTC 2023] keyauthorization='BTspDMvDtMboObRoekxooFB4OwMrf1AbwmIyfQjTsS8.SPMBQOwSYduqnXRq3QlnUjszuIZpZbPGDKDKLVqx3-c'
+[Tue Mar 14 03:15:48 UTC 2023] dvlist='test.ltpix.link#BTspDMvDtMboObRoekxooFB4OwMrf1AbwmIyfQjTsS8.SPMBQOwSYduqnXRq3QlnUjszuIZpZbPGDKDKLVqx3-c#https://acme-v02.api.letsencrypt.org/acme/chall-v3/210676878367/p9CRJw#dns-01#dns'
+[Tue Mar 14 03:15:48 UTC 2023] d
+[Tue Mar 14 03:15:48 UTC 2023] vlist='test.ltpix.link#BTspDMvDtMboObRoekxooFB4OwMrf1AbwmIyfQjTsS8.SPMBQOwSYduqnXRq3QlnUjszuIZpZbPGDKDKLVqx3-c#https://acme-v02.api.letsencrypt.org/acme/chall-v3/210676878367/p9CRJw#dns-01#dns,'
+[Tue Mar 14 03:15:48 UTC 2023] d='test.ltpix.link'
+[Tue Mar 14 03:15:48 UTC 2023] _d_alias
+[Tue Mar 14 03:15:48 UTC 2023] txtdomain='_acme-challenge.test.ltpix.link'
+[Tue Mar 14 03:15:48 UTC 2023] txt='LN2h0R2rinoYt6RsVOYShEBOjYqbtSPnTlgQk1iFPX0'
+[Tue Mar 14 03:15:48 UTC 2023] d_api
+[Tue Mar 14 03:15:48 UTC 2023] Add the following TXT record:
+[Tue Mar 14 03:15:48 UTC 2023] Domain: '_acme-challenge.test.ltpix.link'
+[Tue Mar 14 03:15:48 UTC 2023] TXT value: 'LN2h0R2rinoYt6RsVOYShEBOjYqbtSPnTlgQk1iFPX0'
+[Tue Mar 14 03:15:48 UTC 2023] Please be aware that you prepend _acme-challenge. before your domain
+[Tue Mar 14 03:15:48 UTC 2023] so the resulting subdomain will be: _acme-challenge.test.ltpix.link
+[Tue Mar 14 03:15:48 UTC 2023] Dns record not added yet, so, save to /home/vscode/.acme.sh/test.ltpix.link_ecc/test.ltpix.link.conf and exit.
+[Tue Mar 14 03:15:48 UTC 2023] Please add the TXT records to the domains, and re-run with --renew.
+[Tue Mar 14 03:15:48 UTC 2023] _on_issue_err
+[Tue Mar 14 03:15:48 UTC 2023] Please check log file for more details: /home/vscode/.acme.sh/acme.sh.log
+[Tue Mar 14 03:15:48 UTC 2023] pid
+[Tue Mar 14 03:15:48 UTC 2023] No need to restore nginx, skip.
+[Tue Mar 14 03:15:48 UTC 2023] _clearupdns
+[Tue Mar 14 03:15:48 UTC 2023] dns_entries
+[Tue Mar 14 03:15:48 UTC 2023] skip dns.
