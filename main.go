@@ -72,7 +72,7 @@ func renew_ca(server string, domain string) []string {
 func getChallenge(result *[]string) challenge_token {
 	regex := regexp.MustCompile(`_acme-challenge\.[A-Za-z0-9]+\.[A-Za-z0-9]+`)
 
-	regex2 := regexp.MustCompile(`'([A-Za-z0-9]+)'$`)
+	re := regexp.MustCompile(`TXT value: '(.+?)'`)
 
 	var txtValue string
 	var challenge_domain string
@@ -83,11 +83,12 @@ func getChallenge(result *[]string) challenge_token {
 			challenge_domain = regex.FindString(data)
 		}
 
-		matches := regex2.FindStringSubmatch(data)
-
-		if len(matches) > 1 {
-			txtValue = matches[1]
-			fmt.Println(txtValue)
+		match := re.FindStringSubmatch(data)
+		if len(match) >= 2 {
+			fmt.Println(match[1])
+			txtValue = match[1]
+		} else {
+			fmt.Println("找不到 TXT value")
 		}
 	}
 
